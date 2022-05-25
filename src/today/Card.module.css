@@ -1,0 +1,76 @@
+.mainContainer {
+  height: 100vh;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.cardContainer {
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 1em;
+  width: 18em;
+}
+
+.paginationBttns {
+  margin-top: 2em;
+  height: 10vh;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-left: 4px white solid;
+  border-right: 4px white solid;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(171, 171, 171, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #49a3b9b3;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-bottom: 0;
+}
